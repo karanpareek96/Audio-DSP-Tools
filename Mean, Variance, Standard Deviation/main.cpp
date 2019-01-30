@@ -17,8 +17,8 @@ int main(){
 	SignalStatistics *testSignal = new SignalStatistics(&InputSignal_f32_1kHz_15kHz[0],320);
 	
 	mean = testSignal -> calc_signal_mean();
-	mean = testSignal -> calc_signal_variance();
-	mean = testSignal -> calc_signal_std();
+	variance = testSignal -> calc_signal_variance();
+	std = testSignal -> calc_signal_std();
 	
 	cout << "Mean is " << mean << endl;
 	cout << "Variance is " << variance << endl;
